@@ -4,15 +4,30 @@
 <body>
 
 
-<div ng-app="myApp" ng-controller="myCtrl">
+<div ng-app="myApp" ng-controller="myCtrl" ng-init="mySwitch=true">
 
 <p>Name : <input type="text" ng-model="name"></p>
- 	<h1>WELCOME {{name}}</h1>
+ 	<h1>HELLO {{name}}</h1>
 
 First Name: <input type="text" ng-model="firstName"><br>
 Last Name: <input type="text" ng-model="lastName"><br>
 <br>
 Full Name: {{firstName + " " + lastName}}
+
+
+<p ng-show="true">I am visible.</p>
+
+<p ng-show=mySwitch>I am not visible.</p>
+
+<br>
+<p>
+<button ng-disabled="mySwitch">Click Me!</button>
+</p>
+
+<p>
+<input type="checkbox" ng-model="mySwitch">Button
+</p>
+
 
 </div>
 
