@@ -4,46 +4,46 @@
 <body>
 
 
-<div ng-app="myApp" ng-controller="myCtrl" ng-init="mySwitch=true">
+	<div ng-app="myApp" ng-controller="myCtrl" ng-init="mySwitch=true">
 
-<p>Name : <input type="text" ng-model="name"></p>
- 	<h1>HELLO {{name}}</h1>
-
-
-<button ng-click="toggle()">Hide</button>
+	<p>Name : <input type="text" ng-model="name"></p>
+	<h1>HELLO {{name}}</h1>
 
 
-
-</br> 	
-
-
-<p ng-hide="myVar">
-First Name: <input type="text" ng-model="firstName"><br>
-Last Name: <input type="text" ng-model="lastName"><br>
-</p>
-<br>
-Full Name: {{firstName + " " + lastName}}
-
-
-<p ng-show="true">I am visible.</p>
-
-<p ng-show=mySwitch>I am not visible.</p>
-
-<br>
-<p>
-<button ng-disabled="mySwitch" ng-click="count = count + 1">Click Me!</button>
-</p>
-
-<p>
-<input type="checkbox" ng-model="mySwitch">Button
-</p>
+	<button ng-click="toggle()">Hide</button>
 
 
 
+	</br> 	
 
-<p>Button was clicked {{ count }} times</p>
 
-</div>
+	<p ng-hide="myVar">
+	First Name: <input type="text" ng-model="firstName"><br>
+	Last Name: <input type="text" ng-model="lastName"><br>
+	</p>
+	<br>
+	Full Name: {{firstName + " " + lastName}}
+
+
+	<p ng-show="true">I am visible.</p>
+
+	<p ng-show=mySwitch>I am not visible.</p>
+
+	<br>
+	<p>
+	<button ng-disabled="mySwitch" ng-click="count = count + 1">Click Me!</button>
+	</p>
+
+	<p>
+	<input type="checkbox" ng-model="mySwitch">Button
+	</p>
+
+
+
+
+	<p>Button was clicked {{ count }} times</p>
+
+	</div>
 
 <script type="text/javascript" src="main.js"></script>
 
